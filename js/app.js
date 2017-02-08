@@ -1,5 +1,4 @@
 var app = angular.module('ChantryIsland', ['ngRoute']);//declare app + import ngRoute
-var once = 0;//run menu + logo animation once on homepage
 var siteTitle = "Chantry Island";//Site Title
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {//Config routes
   $routeProvider
@@ -21,13 +20,6 @@ app.controller('HomeCtrl', [function() {
     angular.element(document).ready(function () {
         document.title = siteTitle;
     	var home = document.querySelector("#home");
-    	var menu = document.querySelector("#menu");
-    	var logo = document.querySelector("#logo");
-    	if (once===0) {//logo and menu animation once per session
-    		TweenMax.to(logo, 0.5, {opacity: 1, x:0, startAt:{opacity:0, x:-100}});
-    		TweenMax.to(menu, 0.5, {opacity: 1, x:0, startAt:{opacity:0, x:200}});
-    		once++;
-    	}
         TweenMax.to(home, 2, {delay:0.5,opacity: 1});
     });
 }]);

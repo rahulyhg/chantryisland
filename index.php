@@ -20,6 +20,7 @@
         <!-- <meta name="twitter:url" content="#"> -->
         <meta name="twitter:title" content="Chantry Island is a small, 81-hectare island in Lake Huron, south of the mouth of the Saugeen River and approximately a mile off the shores of the town of Southampton, Ontario.">
       <!--   <meta name="twitter:image" content="img/social-logo.png"> -->
+      <meta name="keywords" content="Chantry Island, Marine Heritage Society, Southampton, ON, Saugeen Shores, Bruce Peninsula, Port Elgin, Tourism, Lighthouse, Boat Tour, Keeper's Cottage, Sunsets, Lake Huron" />
         <meta name="rating" content="General" />
         <meta name="distribution" content="Global" />
         <meta name="revisit-after" content="7 days">
@@ -49,7 +50,9 @@
             }?>
             </noscript>
         </div>
-       
+        
+        <script src="js/vendor/jquery-3.1.1.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/angular.min.js"></script>
         <script src="js/vendor/angular-route.min.js"></script>
         <script src="js/vendor/TweenMax.min.js"></script>
