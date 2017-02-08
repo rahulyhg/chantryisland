@@ -1,0 +1,180 @@
+.hidden {display: none;}
+
+/*Overall styles*/
+body {
+  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-top: 200px;
+  font-size: 32px;
+  overflow-x: hidden;
+}
+a {color: #000;}
+h2,h3 {font-family: 'Raleway', sans-serif;}
+h2 {
+  font-weight: 900;
+  font-size: 64px;
+}
+h3 {
+  font-size: 48px;;
+}
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
+  color: #000;
+  text-decoration:none;
+  opacity: .7;
+}
+/*End Overall styles*/
+
+#home {background: #fff;}
+
+/*
+
+
+
+/*Bootstrap changes*/
+/*.container {width: 100%;margin-bottom: 15px;} *//*Forces Bootstrap grid full screen width*/
+.ham {margin-top: 25px;}
+.nav li a:hover, .nav li a:focus {background: transparent !important;}
+.navbar-nav li a {outline: 0;}
+.nav-top {margin-top: 40px;} /*Fixes top margin*/
+/*.navbar-fixed-top {background:#fff;}*/
+.navbar-toggle .icon-bar {
+  background:#000;
+  width: 40px;
+  height: 5px;
+}
+.container .navbar-collapse {background: #fff;}
+/*End Bootstrap changes*/
+/*Pages*/
+#home {opacity: 0;}
+#about-start, #blog-posts {
+  margin-top: 100px;
+}
+.aboutP {
+  margin-bottom: 50px;
+}
+#blog-posts span {
+  margin-top: -50px;
+  font-size: 11.2px;
+  font-style: italic;
+}
+#blog-posts a,#about a {
+  opacity: .5;
+}
+#blog-posts h4 {
+  font-family: 'Raleway', sans-serif;
+}
+#portfolioItems {
+  margin-top: 80px;
+}
+/*End Pages*/
+
+/*Contact*/
+#contactArea {
+  margin-top: 100px;
+}
+.contactItem a {
+  opacity: .7;
+}
+/*End Contact*/
+
+/*Menu*/
+.menu {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 15px 15px;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  text-transform: none;
+  display: inline-block;
+  overflow: visible;
+}
+#mainMenu a {
+outline: none;
+}
+
+.menu:hover {
+    opacity: 0.7;
+}
+.menu-box {
+  width: 40px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+}
+.menu-inner {
+  top: 50%;
+  margin-top: -2px;  
+  display: block;
+}
+.menu-inner, .menu-inner::before, .menu-inner::after {
+  background-color: #000;
+  border-radius: 4px;
+  width: 40px;
+  height: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.menu-inner::before, .menu-inner::after {
+  content: "";
+  display: block;
+}
+.menu-inner::before {
+  top: -10px;
+}
+.menu-inner::after {
+  bottom: -10px;
+}
+.menu-span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 40px;
+}
+/*End Menu*/
+
+@media only screen and (min-width : 250px) {
+  body {font-size: 12px;}        
+  h1 {font-size: 18px;}
+  h2 {font-size: 26px;}
+  h3 {font-size: 18px;}
+  h4 {font-size: 18px;}
+  .contactItem,.contactItem a {font-size: 18px;}
+  #about-start,#blog-posts,#contactArea {margin-top: 50px;}
+}
+@media only screen and (min-width : 500px) {
+  body {font-size: 14px;}        
+  h1 {font-size: 24px;}
+  h2 {font-size: 48px;}
+  h3 {font-size: 36px;}
+  h4 {font-size: 14px;}
+  h5 {font-size: 18px;}
+  .contactItem,.contactItem a {font-size: 24px;}
+  #about-start,#blog-posts,#contactArea {margin-top: 50px;}
+}
+@media only screen and (min-width : 775px) {
+  body {font-size: 18px;}        
+  h1 {font-size: 24px;}
+  h2 {font-size: 50px;}
+  h3 {font-size: 34px;}
+  h4 {font-size: 14px;}
+  .contactItem,.contactItem a {font-size: 32px;}
+}
+@media only screen and (min-width : 950px) {
+  body {font-size: 18px;}        
+  h1 {font-size: 36px;}
+  h2 {font-size: 64px;}
+  h3 {font-size: 48px;}
+  h4 {font-size: 24px;}
+  .contactItem,.contactItem a {font-size: 36px;}
+}
