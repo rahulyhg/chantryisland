@@ -9,13 +9,67 @@
 		</div>
 	</div>
 	<div class="row" id="pageContent">
-		<div class="col-xs-12 col-md-12 contact-main text-center"><br><br><br>
-			<div class="col-md-8 col-md-offset-2 gallery-text">
-				<p>This section includes pictures of Chantry Island and the area of Lake Huron surrounding the Island. It also includes pictures of the lighthouse and keeper's cottage inside and out, as well as photos of some of the birds and flowers native to the island.</p>
-				<p>If you have photos of Chantry Island that you would like to share with us, connect with our <a target="_blank" href="https://www.facebook.com/MarineHeritageSociety">Facebook</a> page.</p></div>
-
-				<br><br>
-				<br><br>
+		<div class="col-xs-12 col-md-12 contact-main"><br><br><br>
+			<div class="col-md-6 col-md-offset-2 contact-text">
+				<h3>Contact</h3>
+				<br>
+				<div class="row">
+					<form class="form-inline">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" placeholder="Your Name">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" placeholder="Your Email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="subject" placeholder="Subject">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<textarea name="message"></textarea>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
 			</div>
+			<div class="col-md-4">
+				<h4>PHONE NUMBER</h4>
+				<p>519-797-5862 <br>
+				Toll Free: 1-866-797-5862</p>
+				<br>
+				<h4>MAILING ADDRESS</h4>
+				<p>
+					Marine Heritage Society<br>
+					Box 421<br>
+					Southampton, Ontario<br>
+					Canada, N0H 2L0
+				</p>
+				<br>
+				<h4>DIRECTIONS</h4>
+				<p>
+					From Highway 21 in Southampton, turn west on Clarendon and follow the signs, or From High Street, (the main street), turn north on Huron or Grosvenor Street and look for the signs.
+				</p>
+				<br>
+				<h4>ADDRESS</h4>
+				<p>
+					86 Saugeen St.<br>
+					Southampton, Ontario<br>
+					Canada, N0H 2L0
+				</p>
+				<br>	<br>	<br>
+			</div>
+			<br><br>
+			<br><br>
 		</div>
-	</section>
+	</div>
+</section>

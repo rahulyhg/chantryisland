@@ -18,26 +18,24 @@
 				<p>Please specify your Donation Preference:<br>
 				Chantry Island and/or New Tour Boat </p>
 				<p>We will send a tax receipt for all donations $20 and more. </p>
-									<br><br>
-			<br>
-
-<a id="btnred" class="footer-item book-now" href="#">Donate now</a>
-
-			<br>			<br><br>
-			<br><br>			<br><br>
-			<br><br>
+				<br><br>
+				<br>
+				<a id="btnred" class="footer-item book-now" href="#">Donate now</a>
+				<br>			<br><br>
+				<br><br>			<br><br>
+				<br><br>
 			</div>
 			<div class="col-md-3 col-md-offset-2 text-center">
-			<div class="donate-sidebar">
-				<br>
-				<h4>Mailing address</h4>
-				<p>
-				Marine Heritage Society<br>
-Box 421<br>
-Southampton, Ontario<br>
-Canada, N0H 2L0<br>
-				</p>
-			</div>
+				<div class="donate-sidebar">
+					<br>
+					<h4>Mailing address</h4>
+					<p>
+						Marine Heritage Society<br>
+						Box 421<br>
+						Southampton, Ontario<br>
+						Canada, N0H 2L0<br>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>

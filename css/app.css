@@ -166,6 +166,12 @@ margin-left: 100px;
 #donate .donate-sidebar {
   background-color:#e00113;
 }
+#book .book-red {
+  background-color:#e00113;
+  width: 100%;
+  color: #fff;
+  padding:20px;
+}
 #about .about-sidebar-1, #about .about-sidebar-1 h4 { 
   color: #7a7a7c;
   margin-top: 50px;
@@ -180,7 +186,7 @@ margin-left: 100px;
 }
 #about .about-sidebar p {
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-align: justify;
   text-justify: inter-word;
   font-weight: 100;
@@ -199,7 +205,26 @@ margin-left: 100px;
 #donate .donate-sidebar p {
   font-family: 'Raleway', sans-serif;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 100;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+#book .book-now h4 {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 100;
+  margin:50px;
+}
+#book .book-now p {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-size: 14px;
   text-align: justify;
   text-justify: inter-word;
   font-weight: 100;
