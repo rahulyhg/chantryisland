@@ -3,13 +3,15 @@
 	console.log("HELLO WORLD!")
 
 // JS is enabled! Switch links
+	var logo = document.querySelector(".navbar-brand");
 	var menuHome = document.querySelector("#menuHome");
 	var menuAbout = document.querySelector("#menuAbout");
 	var menuBook = document.querySelector("#menuBook");
 	var menuGallery = document.querySelector("#menuGallery");
 	var menuDonate = document.querySelector("#menuDonate");
 	var menuContact = document.querySelector("#menuContact");
-
+	
+	logo.href = "#/";
 	menuHome.href = "#/";
 	menuAbout.href = "#/about";
 	menuBook.href = "#/book";

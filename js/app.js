@@ -16,8 +16,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 app.controller('HomeCtrl', [function() {
     angular.element(document).ready(function () {
         document.title = siteTitle;
-    	var home = document.querySelector("#home");
-        TweenMax.to(home, 2, {delay:0.5,opacity: 1});
+    	var homeWelcome = document.querySelector(".home-welcome");
+        var homeFooter = document.querySelector(".footer");
+        TweenMax.to(homeWelcome, 2, {delay:0.5,opacity: 1});
+        TweenMax.to(homeFooter, 0.5, {delay:1,startAt:{opacity:0, y:200},opacity: 1, y:0});
         var homeFtrLM = document.querySelector(".learn-more");
         var homeFtrBN = document.querySelector(".book-now");
         homeFtrLM.href = "#/about";
@@ -28,6 +30,8 @@ app.controller('HomeCtrl', [function() {
 app.controller('AboutCtrl', [function() {
     angular.element(document).ready(function () {
         document.title = "About - "+siteTitle;
+        var bookNowBtn = document.querySelector(".about-sidebar-click");
+        bookNowBtn.href = "#/book";
     	var about = document.querySelector("#about");
         TweenMax.to(about, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
     });
@@ -37,7 +41,7 @@ app.controller('BookCtrl', [function() {
     angular.element(document).ready(function () {
         document.title = "Book a Tour - "+siteTitle;
         var book = document.querySelector("#book");
-        TweenMax.to(about, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
+        TweenMax.to(book, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
     });
 }]);
 //Controller for Gallery
@@ -45,25 +49,23 @@ app.controller('GalleryCtrl', [function() {
     angular.element(document).ready(function () {
         document.title = "Gallery - "+siteTitle;
         var gallery = document.querySelector("#gallery");
-        TweenMax.to(about, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
+        TweenMax.to(gallery, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
     });
 }]);
 //Controller for Donate
 app.controller('DonateCtrl', [function() {
     angular.element(document).ready(function () {
         document.title = "Donate - "+siteTitle;
-        var gallery = document.querySelector("#donate");
-        TweenMax.to(about, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
+        var donate = document.querySelector("#donate");
+        TweenMax.to(donate, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
     });
 }]);
 //Controller for Contact
 app.controller('ContactCtrl', [function() {
     angular.element(document).ready(function () {
         document.title = "Contact - "+siteTitle;
-    	var contact = document.querySelector("#contact");
-        var contactItem = document.querySelector(".contactItem");
-        TweenMax.to(contact, 0.5, {startAt:{opacity:0, x:-200},opacity: 1, x:0});
-        TweenMax.to(contactItem, 0.5, {startAt:{opacity:0, x:-400},opacity: 1, x:0});
+        var contact = document.querySelector("#contact");
+        TweenMax.to(contact, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
     });
 }]);
 //Controller for Menu
