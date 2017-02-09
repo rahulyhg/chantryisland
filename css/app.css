@@ -10,48 +10,117 @@ body {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  margin-top: 200px;
+  margin-top: 150px;
   font-size: 32px;
   overflow-x: hidden;
 }
+
 a {color: #000;}
+
 h2,h3 {font-family: 'Raleway', sans-serif;}
+
 h2 {
   font-weight: 900;
   font-size: 64px;
 }
+
 h3 {
   font-size: 48px;;
 }
+
 h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
   color: #000;
   text-decoration:none;
   opacity: .7;
 }
+
+nav ul li {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
 /*End Overall styles*/
 
-#home {background: #fff;}
+#home .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #7a7a7c99;
+}
+#btnred {
+  text-transform: uppercase;
+  color: #fff;
+  background-color:#e00113; 
+  border: 2px solid #e00113;
+  padding: 10px;
+  margin: 0 auto;
+}
+#btnwhite {
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px;
+  margin: 0 auto;
+}
+#btnred:hover {
+  text-transform: uppercase;
+  color: #fff;
+  background-color:#e00113; 
+  border: 2px solid #e00113;
+  padding: 10px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+#btnwhite:hover {
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px;
+  margin: 0 auto;
+  text-decoration: none;
+}
 
-/*
-
-
+#home .footer .learn-more, #home .footer .book-now {
+  line-height: 100px;
+  margin-left: 50px;
+}
 
 /*Bootstrap changes*/
-/*.container {width: 100%;margin-bottom: 15px;} *//*Forces Bootstrap grid full screen width*/
+/*.container {width: 100%;margin-bottom: 15px;} /*Forces Bootstrap grid full screen width*/
 .ham {margin-top: 25px;}
 .nav li a:hover, .nav li a:focus {background: transparent !important;}
 .navbar-nav li a {outline: 0;}
 .nav-top {margin-top: 40px;} /*Fixes top margin*/
-/*.navbar-fixed-top {background:#fff;}*/
-.navbar-toggle .icon-bar {
-  background:#000;
-  width: 40px;
-  height: 5px;
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
 }
-.container .navbar-collapse {background: #fff;}
+
+.navbar-brand img {
+    height: 100px;
+}
+.navbar-default .navbar-nav li a {
+    color: #000;
+}
+
 /*End Bootstrap changes*/
 /*Pages*/
 #home {opacity: 0;}
+#home h3 {
+font-size: 72px !important;
+font-weight: 800;
+margin-left: 100px;
+}
+#home .footer h4 {
+font-size: 32px !important;
+color: #fff;
+font-weight: 800;
+line-height: 80px;
+margin-left: 100px;
+}
 #about-start, #blog-posts {
   margin-top: 100px;
 }
@@ -82,6 +151,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover {
   opacity: .7;
 }
 /*End Contact*/
+
 
 /*Menu*/
 .menu {

@@ -20,13 +20,13 @@
         <!-- <meta name="twitter:url" content="#"> -->
         <meta name="twitter:title" content="Chantry Island is a small, 81-hectare island in Lake Huron, south of the mouth of the Saugeen River and approximately a mile off the shores of the town of Southampton, Ontario.">
       <!--   <meta name="twitter:image" content="img/social-logo.png"> -->
+      <meta name="keywords" content="Chantry Island, Marine Heritage Society, Southampton, ON, Saugeen Shores, Bruce Peninsula, Port Elgin, Tourism, Lighthouse, Boat Tour, Keeper's Cottage, Sunsets, Lake Huron" />
         <meta name="rating" content="General" />
         <meta name="distribution" content="Global" />
         <meta name="revisit-after" content="7 days">
         <meta name="language" content="english">
         <meta name="googlebot" content="noodp">
         <meta name="fragment" content="!">
-  
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,900|Roboto:400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
@@ -34,7 +34,7 @@
     </head>
     <body ng-app="ChantryIsland">
         <h1 class="hidden">Chantry Island</h1>
-        <?php include 'includes/header.php';?>
+        <?php include 'partials/header.php';?>
         <div ng-view class="container-fluid" id="page">
             <noscript>
             <link rel="stylesheet" href="css/no-js.css">
@@ -42,14 +42,15 @@
             if (isset($_GET['partial'])) {//If partial is in url
             $partial =  $_GET['partial'];//set variable of of partial
             // echo $_GET['partial']; // Checking for getting partial in route
-            include 'includes/'.$partial.'.php';//include
+            include 'partials/'.$partial.'.php';//include
             }
             else {
-            include 'includes/home.php';//otherwise include
+            include 'partials/home.php';//otherwise include
             }?>
             </noscript>
-        </div>
-       
+        </div>  
+        <script src="js/vendor/jquery-3.1.1.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/angular.min.js"></script>
         <script src="js/vendor/angular-route.min.js"></script>
         <script src="js/vendor/TweenMax.min.js"></script>
