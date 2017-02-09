@@ -1,9 +1,8 @@
 (function() {
 	"use strict";
-	//console.log("HELLO WORLD!")
-	
-	//Variables
-	
+	console.log("HELLO WORLD!")
+
+// JS is enabled!
 	var menuHome = document.querySelector("#menuHome");
 	var menuAbout = document.querySelector("#menuAbout");
 	var menuBook = document.querySelector("#menuBook");
@@ -18,6 +17,10 @@
 	menuDonate.href = "#/donate";
 	menuContact.href = "#/contact";
 
+
+
+	
+	//Variables
 
 	//Functions
 
