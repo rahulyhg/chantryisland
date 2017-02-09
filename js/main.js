@@ -2,7 +2,7 @@
 	"use strict";
 	console.log("HELLO WORLD!")
 
-// JS is enabled!
+// JS is enabled! Switch links
 	var menuHome = document.querySelector("#menuHome");
 	var menuAbout = document.querySelector("#menuAbout");
 	var menuBook = document.querySelector("#menuBook");
@@ -16,7 +16,7 @@
 	menuGallery.href = "#/gallery";
 	menuDonate.href = "#/donate";
 	menuContact.href = "#/contact";
-
+// end js enabled link switching
 
 
 	
