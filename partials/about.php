@@ -1,5 +1,5 @@
 <section id="about">
-	<h2 class="hidden">About Liam Stewart</h2>
+	<h2 class="hidden">About Chantry Island</h2>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 text-center">
 			<h2>About Us</h2>
@@ -27,12 +27,19 @@
 			<p>Today the tour is operated with over 125 volunteers, whose jobs include island housekeepers, gardeners, tour boat captains, crew and tour guides, and gift shop sales and service personnel. Volunteers also install the portable walkways and docks every spring and remove them every fall. To date, there have been over 12,000 visitors to the island. </p>
 			<br><br><br>
 		</div>
-		<div class="col-xs-12 col-sm-offset-0 col-md-4 col-md-offset-1 about-sidebar text-center">
-			<h4>The lighthouse</h4>
-			<p>During the mid 1800’s water traffic on the Great Lakes had substantially increased and the colonial government called for improved navigational tools for the mariners on the Lake Huron. John Brown of Thorold was contracted to build the lighthouse on Chantry Island, as well as 10 other lighthouses to help sailors navigate the Lake. Because of the expense and difficulty of building, only six were completed. The Chantry Island Lighthouse was one of these completed and it was lit on April 1, 1859.
-			</p>
-			<p>The lighthouse stands 86 ft. above water level and is 80 ft. high from its base to the light’s center. The lantern room of the lighthouse was fitted with a Fresnel lens built and transported from Paris, France. The first fuel used was sperm whale oil and the first light was a fixed light, not the familiar flashing one. Other fuels used have been colza oil, coal oil, kerosene, acetylene and electricity. Its present-day flashing light is solar powered.
-			</p>
+		<div class="col-xs-12 col-sm-offset-0 col-md-4 col-md-offset-1 text-center">
+			<div class="about-sidebar">
+				<br>
+				<h4>The lighthouse</h4>
+				<p>During the mid 1800’s water traffic on the Great Lakes had substantially increased and the colonial government called for improved navigational tools for the mariners on the Lake Huron. John Brown of Thorold was contracted to build the lighthouse on Chantry Island, as well as 10 other lighthouses to help sailors navigate the Lake. Because of the expense and difficulty of building, only six were completed. The Chantry Island Lighthouse was one of these completed and it was lit on April 1, 1859.
+				</p>
+				<p>The lighthouse stands 86 ft. above water level and is 80 ft. high from its base to the light’s center. The lantern room of the lighthouse was fitted with a Fresnel lens built and transported from Paris, France. The first fuel used was sperm whale oil and the first light was a fixed light, not the familiar flashing one. Other fuels used have been colza oil, coal oil, kerosene, acetylene and electricity. Its present-day flashing light is solar powered.
+				</p>
+			</div>
+			<div class="about-sidebar-1">
+				<h4>FIND OUT HOW TO<br>BOOK YOUR TRIP TO<br>CHANTRY ISLAND<br>TODAY!</h4><br>
+				<a id="btngrey" class="footer-item about-sidebar-click" href="index.php?partial=book">CLICK HERE</a>
+			</div>
 		</div>
 	</div>
 </section>
