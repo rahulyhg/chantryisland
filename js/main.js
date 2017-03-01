@@ -19,21 +19,6 @@
 	menuDonate.href = "#/donate";
 	menuContact.href = "#/contact";
 // end js enabled link switching
-
-
-	
-
-
-
-            $.getJSON('includes/ajaxQuery.php', { image:this.id }, function(data){
-            console.log(data);
-            // $('.modelName').text(data.modelName);
-            // $('.priceInfo').text(data.pricing);
-            // $('.modelDetails').text(data.modelDetails);
-            });
-
-
-
 	
 	//Variables
 
