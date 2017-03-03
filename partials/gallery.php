@@ -1,7 +1,7 @@
 <?php
 	require_once("../admin/phpscripts/init.php");
 	$tbl="tbl_gallery";
-	$getGallery = getGallery($tbl);
+	$getGallery = getAll($tbl);
 	//echo $getPosts;
 ?>
 <section id="gallery">
@@ -27,20 +27,18 @@
 						<div class="col-md-3"><img src="img/birds4.jpg" alt="chantry island" class="img-responsive"></div>
 					</div> -->
 				</div>
-				
-
-			<?php
-				$rowLoop= 0;
-				if(!is_string($getGallery)){
-					while($row = mysqli_fetch_array($getGallery)){
-
-						echo "<a href=\"#gallery/{$row['galleryItem_id']}\"><div class=\"col-md-3\"><img src=\"img/{$row['galleryItem_img']}\" alt=\"{$row['galleryItem_alt']}\" class=\"img-responsive\"></a></div>";
-					}
-				}
-				else {
-					//echo "nope...";
-				}
+    <div class="row">
+		<?php
+			if(!is_string($getGallery)){
+			while($row = mysqli_fetch_array($getGallery)){
+			echo "<div class=\"col-xs-12 col-md-3\"><a href=\"#gallery/{$row['g_id']}\"><img class=\"img-responsive\" src=\"admin/uploads/images/{$row['g_img']}\"></a></div>";
+			}
+			} else {
+			//echo "nope...";
+			}
 			?>
+    </div>
+
 
 			</div>
 		</div>

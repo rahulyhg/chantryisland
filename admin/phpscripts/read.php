@@ -1,28 +1,31 @@
 <?php
-	function getGallery($tbl){
+	function getAll($tbl){
 		require_once("config.php");
 		$queryAll = "SELECT * FROM {$tbl}";
 		//echo $queryAll;
-		$runGallery = mysqli_query($link, $queryAll);
-		if($runGallery) {
-			return $runGallery;
+		$runAll = mysqli_query($link, $queryAll);
+		if($runAll) {
+			return $runAll;
 		} else {
 			$error = "There was an error accessing this information.";
 			return $error;
 		}
-		mysqli_close($link);
+
+		mysqli_close($link); //want to make sure that it is terminated, do not want anything accessible
 	}
-	function getGalleryItem($id,$tbl,$col) {
+	function getSingle($id,$tbl,$col) {
 		require_once("config.php");
-		$queryGalleryItem = "SELECT * FROM {$tbl} WHERE {$col} = {$id}";
+		$querySingle = "SELECT * FROM {$tbl} WHERE {$col} = {$id}";
 		//echo $querySingle;
-		$runGalleryItem = mysqli_query($link, $queryGalleryItem);
-			if ($runGalleryItem) {
-				return $runGalleryItem;
+		$runSingle = mysqli_query($link, $querySingle);
+			if ($runSingle) {
+				return $runSingle;
 			} else {
-				$error = "Please pick a photo!";
+				$error = "Please pick a photo from the gallery!";
 				return $error;
 			}
+
+
 		mysqli_close($link);
 	}
 ?>
