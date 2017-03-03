@@ -53,7 +53,14 @@ app.controller('GalleryCtrl', [function() {
     angular.element(document).ready(function () {
         document.title = "Gallery - "+siteTitle;
         var gallery = document.querySelector("#gallery");
-        TweenMax.to(gallery, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
+        TweenMax.to(gallery, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});   
+        $('.gallery img').on('click', function() {
+            $.getJSON('includes/getImages.php', { getImage:this.id }, function(data) {
+                //console.log('click');
+                $('.image').attr('src', 'admin/uploads/images/' + data.g_img);
+                $('.caption').text(data.g_title);            
+            });
+        }); 
     });
 }]);
 //Controller for Gallery Item
@@ -62,6 +69,7 @@ app.controller('GalleryItemCtrl', [function() {
         document.title = "Gallery - "+siteTitle;
         var galleryItem = document.querySelector("#galleryItem");
         TweenMax.to(galleryItem, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
+
     });
 }]);
 //Controller for Donate
