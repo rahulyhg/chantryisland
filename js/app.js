@@ -6,6 +6,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     .when("/about", {templateUrl: "partials/about.php",controller:"AboutCtrl"})//About Page
     .when("/book", {templateUrl: "partials/book.php",controller:"BookCtrl"})//Book Page
     .when("/gallery", {templateUrl: "partials/gallery.php",controller:"GalleryCtrl"})//Gallery Page
+    .when('/gallery/:image_id', {//Gallery item Page
+        templateUrl: function(attrs){ 
+            return 'partials/photo.php?image_id=' + attrs.image_id; },controller:"GalleryItemCtrl"
+    })
     .when("/donate", {templateUrl: "partials/donate.php",controller:"DonateCtrl"})//Donate Page
     .when("/contact", {templateUrl: "partials/contact.php",controller:"ContactCtrl"})//Contact Page
     .when("/menu", {templateUrl: "partials/menu.php",controller:"MenuCtrl"})//Menu
@@ -49,7 +53,23 @@ app.controller('GalleryCtrl', [function() {
     angular.element(document).ready(function () {
         document.title = "Gallery - "+siteTitle;
         var gallery = document.querySelector("#gallery");
-        TweenMax.to(gallery, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
+        TweenMax.to(gallery, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});   
+        $('.gallery img').on('click', function() {
+            $.getJSON('includes/getImages.php', { getImage:this.id }, function(data) {
+                //console.log('click');
+                $('.image').attr('src', 'admin/uploads/images/' + data.g_img);
+                $('.caption').text(data.g_title);            
+            });
+        }); 
+    });
+}]);
+//Controller for Gallery Item
+app.controller('GalleryItemCtrl', [function() {
+    angular.element(document).ready(function () {
+        document.title = "Gallery - "+siteTitle;
+        var galleryItem = document.querySelector("#galleryItem");
+        TweenMax.to(galleryItem, 0.5, {startAt:{opacity:0, y:200},opacity: 1, y:0});
+
     });
 }]);
 //Controller for Donate
