@@ -5,10 +5,7 @@
   height: 400px;
 }
 
-.streetView {
-  width: 45%;
-  height: 400px;
-}
+
 
 /*Overall styles*/
 body {
@@ -85,6 +82,8 @@ nav ul li {
   border: 2px solid #e00113;
   padding: 10px;
   margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 0;
 }
 #btnwhite {
   text-transform: uppercase;
