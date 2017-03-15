@@ -19,12 +19,5 @@
 	menuDonate.href = "#/donate";
 	menuContact.href = "#/contact";
 // end js enabled link switching
-	
-	//Variables
-
-	//Functions
-
-	//Listeners
-
 
 })();

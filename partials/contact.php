@@ -66,10 +66,13 @@
 					Southampton, Ontario<br>
 					Canada, N0H 2L0
 				</p>
-				<br>	<br>	<br>
 			</div>
-			<br><br>
-			<br><br>
+
+<div class="map-wrapper"></div>
+<input type="textbox" class="address" placeholder="Enter starting point">
+<button class="geocode">Get Route</button>
+<div class="directionsPanel"></div>
+<div class="streetView"></div>
 		</div>
 	</div>
 </section>

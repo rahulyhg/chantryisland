@@ -31,6 +31,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/app.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtzqy88IcZYxiJhq1nI7JWXo3yRED9RhA"></script>
     </head>
     <body ng-app="ChantryIsland">
         <h1 class="hidden">Chantry Island</h1>

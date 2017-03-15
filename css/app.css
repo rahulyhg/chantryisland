@@ -1,5 +1,15 @@
 .hidden {display: none;}
 
+.map-wrapper {
+  width: 100%;
+  height: 400px;
+}
+
+.streetView {
+  width: 45%;
+  height: 400px;
+}
+
 /*Overall styles*/
 body {
   background: url(../img/bg.jpg) no-repeat center center fixed; 
