@@ -39,7 +39,7 @@
 							<textarea name="message"></textarea>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
+					<button type="submit" class="btn btn-default" id="btnred">Submit</button>
 				</form>
 			</div>
 			<div class="col-md-4">
@@ -66,10 +66,13 @@
 					Southampton, Ontario<br>
 					Canada, N0H 2L0
 				</p>
-				<br>	<br>	<br>
 			</div>
-			<br><br>
-			<br><br>
+
+<div class="map-wrapper"></div>
+<input type="textbox" class="address" placeholder="Enter starting point">
+<button class="geocode btn btn-default" id="btnred">Get Route</button>
+<button class="streetView btn btn-default" id="btnred">Show Street View</button>
+<div class="directionsPanel"></div>
 		</div>
 	</div>
 </section>

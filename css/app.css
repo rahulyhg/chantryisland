@@ -1,5 +1,12 @@
 .hidden {display: none;}
 
+.map-wrapper {
+  width: 100%;
+  height: 400px;
+}
+
+
+
 /*Overall styles*/
 body {
   background: url(../img/bg.jpg) no-repeat center center fixed; 
@@ -17,6 +24,9 @@ body {
 
 /*Bootstrap changes*/
 /*.container {width: 100%;margin-bottom: 15px;} /*Forces Bootstrap grid full screen width*/
+
+#gallery .img-responsive {margin-bottom: 25px;}
+
 .ham {margin-top: 25px;}
 .nav li a:hover, .nav li a:focus {background: transparent !important;}
 .navbar-nav li a {outline: 0;}
@@ -72,6 +82,8 @@ nav ul li {
   border: 2px solid #e00113;
   padding: 10px;
   margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 0;
 }
 #btnwhite {
   text-transform: uppercase;
@@ -144,13 +156,13 @@ margin-left: 100px;
   line-height: 100px;
   margin-left: 50px;
 }
-#about h2,#book h2,#gallery h2,#donate h2,#contact h2 {
+#about h2,#book h2,#gallery h2,#galleryItem h2,#donate h2,#contact h2 {
   font-size: 28px;
   font-weight: 100;
   text-transform: uppercase;
   color:#000;
 }
-#about h3,#book h3,#gallery h3,#donate h3,#contact h3 {
+#about h3,#book h3,#gallery h3,#galleryItem h3,#donate h3,#contact h3 {
   font-size: 38px;
   color: #e00113;
 }
@@ -232,7 +244,7 @@ margin-left: 100px;
   padding-left: 20px;
   padding-bottom: 40px;
 }
-.gallery-text {margin-bottom: 50px;}
+.gallery-text {margin-bottom: 50px;color:#000;}
 /*End Pages*/
 
 /*Contact*/
