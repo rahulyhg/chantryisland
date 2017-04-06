@@ -15,8 +15,7 @@
 
     $qstring = "UPDATE {$tbl} SET ";
 
-    foreach($_POST as $key => $value)
-    {
+    foreach($_POST as $key => $value){
         $count++;
         if($count != $num)
         {
@@ -31,12 +30,10 @@
 
     //echo $qstring;
     $updateQuery = mysqli_query($link, $qstring);
-    if($updateQuery)
-    {
-        redirect_to("../index.php");
+    if($updateQuery){
+        redirect_to("../index.php?partial=edit-done");
     }
-    else
-    {
+    else{
         echo "Error updating entry!";
     }
 

@@ -5,7 +5,6 @@
 		$password = mysqli_real_escape_string($link,$password);
 		$loginString = "SELECT * FROM tbl_user WHERE user_name ='{$username}' AND user_pass = '{$password}'";
 		
-
 		$user_set = mysqli_query($link, $loginString);
 
 		if(mysqli_num_rows($user_set)){
@@ -16,8 +15,6 @@
 			$_SESSION['users_name'] = $found_user['user_name']; 
 			$_SESSION['users_lastlogin'] = $found_user['user_lldate'];
 
-
-			//IP
 			if(mysqli_query($link, $loginString)){
 				$updateString = "UPDATE tbl_user SET user_ip='{$ip}' WHERE user_id='{$id}'";
 				$lastLoginQuery = "UPDATE tbl_user SET user_lldate = NOW() WHERE user_id='{$id}'"; //Updates the user's last login date using a MySQL call.
@@ -39,22 +36,11 @@
 
 		}
 
-		//LOCKOUT
-
-		/*elseif
-		{
-			if($loginAttempts < 3)
-			{
-				$moreAttempts = $loginAttempts++;
-
-				session_destroy();
-			}*/
-			else
-			{
+	
+			else {
 			$message = "Username/Password was incorrect. You now have X chances to successfully login!";
 			return $message;
 			}
-		//}
 
 		mysqli_close($link);
 	}
