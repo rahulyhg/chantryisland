@@ -1,0 +1,38 @@
+#book {
+    h2 {
+        @extend .page-h2;
+    }
+    h3 {
+        @extend .page-h3;
+    }
+    .book-main {
+        @extend .page-main;
+    }
+    .book-red {
+        background-color: $red;
+        width: 100%;
+        color: #fff;
+        padding: 20px;
+    }
+    .book-now {
+        p {
+            font-family: 'Raleway', sans-serif;
+            color: #fff;
+            font-size: 14px;
+            text-align: justify;
+            text-justify: inter-word;
+            font-weight: 100;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+        h4 {
+            text-transform: uppercase;
+            font-family: 'Raleway', sans-serif;
+            color: #fff;
+            font-size: 28px;
+            font-weight: 100;
+            margin: 50px;
+        }
+    }
+}

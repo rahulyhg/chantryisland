@@ -1,0 +1,27 @@
+#home {
+    margin-top: 100px;
+    .home-welcome {
+        opacity: 0;
+    }
+    h3 {
+        font-size: 72px !important;
+        font-weight: 800;
+        margin-left: 100px;
+    }
+    .footer {
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(122, 122, 124, 0.50);
+        h4 {
+            font-size: 32px !important;
+            color: #fff;
+            font-weight: 800;
+            line-height: 80px;
+            margin-left: 100px;
+        }
+    }
+}

@@ -67,7 +67,9 @@
 					Canada, N0H 2L0
 				</p>
 			</div>
-
+<br>
+<br>
+<br>
 <div class="map-wrapper"></div>
 <input type="textbox" class="address" placeholder="Enter starting point">
 <button class="geocode btn btn-default" id="btnred">Get Route</button>
