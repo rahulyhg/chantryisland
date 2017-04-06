@@ -1,3 +1,22 @@
+<?php
+    require_once("../admin/phpscripts/init.php");
+
+    if(isset($_POST['name']))
+    {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $subject = $_POST['subject'];
+        $msg = $_POST['message'];
+        $direct = "thankyou.php";
+        sendMessage($name, $email, $phone, $subject, $msg, $direct);
+    }
+    else
+    {
+        //echo "Please fill out the form."; 
+    }
+
+?>
 <section id="contact">
 	<h2 class="hidden">Contact Chantry Island Team</h2>
 	<div class="row">
@@ -10,35 +29,37 @@
 	</div>
 	<div class="row" id="pageContent">
 		<div class="col-xs-12 col-md-12 contact-main"><br><br><br>
-			<div class="col-md-6 col-md-offset-2 contact-text">
+			<div class="col-md-2 col-md-offset-5 contact-text">
 				<h3>Contact</h3>
 				<br>
 				<div class="row">
 					<form class="form-inline">
-						<div class="col-md-6">
+				
 							<div class="form-group">
-								<input type="text" class="form-control" id="name" placeholder="Your Name">
+								<input type="text" class="form-control" name="name" placeholder="Your Name">
 							</div>
-						</div>
-						<div class="col-md-6">
+				<br>
+				<br>
+					
 							<div class="form-group">
-								<input type="email" class="form-control" id="email" placeholder="Your Email">
+								<input type="email" class="form-control" name="email" placeholder="Your Email">
 							</div>
-						</div>
-						<div class="col-md-6">
+					<br><br>
+		
 							<div class="form-group">
-								<input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+								<input type="text" class="form-control" name="phone" placeholder="Your Phone Number">
 							</div>
-						</div>
-						<div class="col-md-6">
+	<br><br>
+				
 							<div class="form-group">
-								<input type="text" class="form-control" id="subject" placeholder="Subject">
+								<input type="text" class="form-control" name="subject" placeholder="Subject">
 							</div>
-						</div>
+			<br><br>	
 						<div class="col-md-12">
-							<textarea name="message"></textarea>
+							<textarea class="form-control" name="message"></textarea>
 						</div>
 					</div>
+					<br><br>
 					<button type="submit" class="btn btn-default" id="btnred">Submit</button>
 				</form>
 			</div>
@@ -71,7 +92,7 @@
 <br>
 <br>
 <div class="map-wrapper"></div>
-<input type="textbox" class="address" placeholder="Enter starting point">
+<input type="textbox" class="form-control address" placeholder="Enter starting point">
 <button class="geocode btn btn-default" id="btnred">Get Route</button>
 <button class="streetView btn btn-default" id="btnred">Show Street View</button>
 <div class="directionsPanel"></div>
