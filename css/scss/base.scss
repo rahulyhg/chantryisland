@@ -1,0 +1,162 @@
+.hidden {
+    display: none;
+}
+
+body {
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    overflow-x: hidden;
+}
+
+a {
+    color: #e00113;
+}
+
+.row {
+    margin: 0px;
+}
+
+.navbar-brand img {
+    height: 100px;
+}
+
+
+/*End Bootstrap changes*/
+
+// Headings
+h1 {
+    a {
+        &:hover {
+            @extend .heading-link-hover;
+        }
+    }
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 64px;
+    font-family: 'Raleway', sans-serif;
+    a {
+        &:hover {
+            @extend .heading-link-hover;
+        }
+    }
+}
+
+h3 {
+    font-size: 48px;
+    font-family: 'Raleway', sans-serif;
+    a {
+        &:hover {
+            @extend .heading-link-hover;
+        }
+    }
+}
+
+h4 {
+    a {
+        &:hover {
+            @extend .heading-link-hover;
+        }
+    }
+}
+
+h5 {
+    a {
+        &:hover {
+            @extend .heading-link-hover;
+        }
+    }
+}
+
+.heading-link-hover {
+    color: #000;
+    text-decoration: none;
+    opacity: .7;
+}
+
+// Buttons
+#btnred {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #e00113;
+    border: 2px solid #e00113;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0;
+    &:hover {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #e00113;
+        border: 2px solid #e00113;
+        padding: 10px;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+}
+
+#btnwhite {
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px;
+    margin: 0 auto;
+    &:hover {
+        text-transform: uppercase;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 10px;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+}
+
+#btngrey {
+    text-transform: uppercase;
+    color: $grey;
+    border: 2px solid $grey;
+    padding: 10px;
+    margin: 0 auto;
+    &:hover {
+        text-transform: uppercase;
+        color: $grey;
+        border: 2px solid $grey;
+        padding: 10px;
+        margin: 0 auto;
+    }
+}
+
+// Page Content
+#pageContent {
+    width: 100%;
+    margin-top: 80px;
+    background-color: #fff;
+}
+
+// Page Extends
+.page-h2 {
+    font-size: 28px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.page-h3 {
+    font-size: 38px;
+    color: $red;
+}
+
+.page-main {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}

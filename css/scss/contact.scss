@@ -1,0 +1,19 @@
+#contact {
+    h2 {
+        @extend .page-h2;
+    }
+    h3 {
+        @extend .page-h3;
+    }
+    .contact-main {
+        @extend .page-main;
+    }
+    #contactArea {
+        margin-top: 100px;
+    }
+    .contactItem {
+        a {
+            opacity: .7;
+        }
+    }
+}

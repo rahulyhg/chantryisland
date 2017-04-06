@@ -1,31 +1,38 @@
 <?php
 	function getAll($tbl){
-		require_once("config.php");
+		include('config.php');
 		$queryAll = "SELECT * FROM {$tbl}";
-		//echo $queryAll;
 		$runAll = mysqli_query($link, $queryAll);
-		if($runAll) {
-			return $runAll;
-		} else {
-			$error = "There was an error accessing this information.";
+		if($runAll){
+			return $runAll;	
+		}
+		else{
+			$error =  "There was an error accessing this information.  Please contact your admin.";
 			return $error;
 		}
-
-		mysqli_close($link); //want to make sure that it is terminated, do not want anything accessible
 	}
-	function getSingle($id,$tbl,$col) {
-		require_once("config.php");
-		$querySingle = "SELECT * FROM {$tbl} WHERE {$col} = {$id}";
-		//echo $querySingle;
+	function getSite() {
+		include('config.php');
+		$queryAll = "SELECT * FROM tbl_site";
+		$runAll = mysqli_query($link, $queryAll);
+		if($runAll){
+			return $runAll;	
+		}
+		else{
+			$error =  "There was an error accessing this information.  Please contact your admin.";
+			return $error;
+		}
+	}
+	function getSingle($tbl, $col, $id) {
+		require_once('config.php');
+		$querySingle = "SELECT * FROM {$tbl} WHERE {$col}={$id}";
 		$runSingle = mysqli_query($link, $querySingle);
-			if ($runSingle) {
-				return $runSingle;
-			} else {
-				$error = "Please pick a photo from the gallery!";
-				return $error;
-			}
-
-
-		mysqli_close($link);
+		if($runSingle){
+			return $runSingle;	
+		}
+		else{
+			$error =  "There was an error accessing this information.  Please contact your admin.";
+			return $error;
+		}
 	}
 ?>

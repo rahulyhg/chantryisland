@@ -1,3 +1,10 @@
+<?php 
+  require_once('../admin/phpscripts/init.php');
+
+    $tbl = "tbl_site";
+    $getContent = getAll($tbl);
+?>
+   <?php while($row = mysqli_fetch_array($getContent)): ?>
 <section id="book">
 	<h2 class="hidden">Book a Tour of Chantry Island</h2>
 	<div class="row">
@@ -10,32 +17,22 @@
 	</div>
 	<div class="row" id="pageContent">
 		<div class="col-xs-12 col-md-12 book-main"><br><br><br>
-			<div class="col-md-6 col-md-offset-2 book-text">
-				<h2>tour information</h2>
-				<h3>The tour is much like a medium hike and requires a degree of agility and fitness.</h3>
+			<div class="col-md-6 col-md-offset-1 book-text">
+				<h2><?php echo $row['book_title']; ?></h2>
+				<h3>	<?php echo $row['book_Subtitle']; ?></h3>
 				<br>
-				<p>You can enjoy the tour without climbing the 106 steps in the Lighthouse tower. However, when you do reach the light room, you will always remember the view.</p>
-				<p>For safety, children must be a minimum of 4 feet tall and must be accompanied by an Adult.</p>
-				<p>Footwear suitable for hiking is mandatory. For safety reasons, Flip-Flops are not allowed.</p>
-				<p>Also Note:<br>
-					The 2 hour tour must be pre-booked and prepaid.<br>
-					There are 9 seats on the boat. The cost is $30.00 per person (includes HST).<br>
-					For refunds, cancellations must be received 24 hours before the scheduled departure.<br>
-					Chantry Island is a Federal Migratory Bird Sanctuary and No Pets allowed on the island.<br>
-				Cancellation can be caused by weather conditions but light rain is fine.</p><br>
+				<p>	<?php echo $row['book_p']; ?></p><br>
 				<div class="book-red text-center">
 					<h4>WHEN AND WHERE TO MEET</h4><br>
-					<p>Come to the Chantry Island Tour Base and Gift Shop located at the south side of the Saugeen River at the harbour in Southampton and arrive 15 minutes ahead of your scheduled tour. Check in and receive your ticket. You will be directed to the dock for the Peerless II.
+					<p>
+					<?php echo $row['meet_p']; ?>
 					</p>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-md-offset-1">
 				<h4>RATES</h4>
 				<p>
-					- $30 per person (includes HST).<br>
-					- Same price for children & adults. <br>
-					- Special group rates available. <br>
-					- Mastercard, Debit, Visa accepted.
+					<?php echo $row['book_rates']; ?>
 				</p>
 				<br>
 				<h4>CONTACT US TODAY<br>BY PHONE OR E-MAIL<br>TO BOOK YOUR TOUR!</h4>
@@ -46,8 +43,8 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-12 book-main"><br><br>
-				<div class="col-md-8 col-md-offset-2 book-text">
-					<h2>SCHEDULE FOR 2017</h2>
+				<div class="col-md-6 col-md-offset-1 book-text">
+					<h2>SCHEDULE FOR <?php echo $row['tour_year']; ?></h2>
 					<br><br>
 					<table class="table table-hover">
 						<thead>
@@ -86,3 +83,5 @@
 			<br><br><br>		<br><br><br>
 		</div>
 	</section>
+
+	    <?php endwhile; ?>

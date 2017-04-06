@@ -50,12 +50,11 @@
             }?>
             </noscript>
         </div>  
-        <script src="js/vendor/jquery-3.1.1.min.js"></script>
+        <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/angular.min.js"></script>
         <script src="js/vendor/angular-route.min.js"></script>
         <script src="js/vendor/TweenMax.min.js"></script>
         <script src="js/app.js"></script>
-        <script src="js/main.js"></script>
     </body>
 </html>

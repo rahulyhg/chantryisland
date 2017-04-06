@@ -1,0 +1,23 @@
+#gallery {
+    h2 {
+        @extend .page-h2;
+    }
+    h3 {
+        @extend .page-h3;
+    }
+    .gallery-main {
+        @extend .page-main;
+    }
+    .gallery-text {
+        margin-bottom: 50px;
+        color: #000;
+    }
+    .gallery {
+        img {
+            cursor: pointer;
+        }
+        .img-responsive {
+            margin-bottom: 25px;
+        }
+    }
+}

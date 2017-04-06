@@ -10,7 +10,7 @@
 	</div>
 	<div class="row" id="pageContent">
 		<div class="col-xs-12 col-md-12 donate-main"><br><br><br>
-			<div class="col-md-5 col-md-offset-2 donate-text">
+			<div class="col-md-5 col-md-offset-1 donate-text">
 				<h2>why should you donate?</h2>
 				<h3>Since 1997 we have had a tremendous amount of support by donations.</h3>
 				<br>
@@ -25,7 +25,7 @@
 				<br><br>			<br><br>
 				<br><br>
 			</div>
-			<div class="col-md-3 col-md-offset-2 text-center">
+			<div class="col-md-3 col-md-offset-3 text-center">
 				<div class="donate-sidebar">
 					<br>
 					<h4>Mailing address</h4>
