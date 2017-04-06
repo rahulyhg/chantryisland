@@ -30,6 +30,7 @@ $id = $_SESSION['users_creds'];
           <ul class="nav navbar-nav">
             <li><a href="index.php?partial=admin_index">Home</a></li>
             <li><a href="index.php?partial=admin_editsite">Edit Website</a></li>
+            <li><a href="index.php?partial=admin_addgallery">Gallery</a></li>
 <!--             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit Pages <span class="caret"></span></a>
               <ul class="dropdown-menu">

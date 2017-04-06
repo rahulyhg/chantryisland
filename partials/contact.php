@@ -1,21 +1,19 @@
 <?php
-    require_once("../admin/phpscripts/init.php");
-
-    if(isset($_POST['name']))
-    {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $subject = $_POST['subject'];
-        $msg = $_POST['message'];
-        $direct = "thankyou.php";
-        sendMessage($name, $email, $phone, $subject, $msg, $direct);
-    }
-    else
-    {
-        //echo "Please fill out the form."; 
-    }
-
+require_once("../admin/phpscripts/init.php");
+if(isset($_POST['name']))
+{
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$subject = $_POST['subject'];
+$msg = $_POST['message'];
+$direct = "thankyou.php";
+sendMessage($name, $email, $phone, $subject, $msg, $direct);
+}
+else
+{
+//echo "Please fill out the form.";
+}
 ?>
 <section id="contact">
 	<h2 class="hidden">Contact Chantry Island Team</h2>
@@ -29,32 +27,32 @@
 	</div>
 	<div class="row" id="pageContent">
 		<div class="col-xs-12 col-md-12 contact-main"><br><br><br>
-			<div class="col-md-2 col-md-offset-5 contact-text">
+			<div class="col-md-6 col-md-offset-2 contact-text">
 				<h3>Contact</h3>
 				<br>
 				<div class="row">
 					<form class="form-inline">
-				
-							<div class="form-group">
-								<input type="text" class="form-control" name="name" placeholder="Your Name">
-							</div>
-				<br>
-				<br>
-					
-							<div class="form-group">
-								<input type="email" class="form-control" name="email" placeholder="Your Email">
-							</div>
-					<br><br>
-		
-							<div class="form-group">
-								<input type="text" class="form-control" name="phone" placeholder="Your Phone Number">
-							</div>
-	<br><br>
-				
-							<div class="form-group">
-								<input type="text" class="form-control" name="subject" placeholder="Subject">
-							</div>
-			<br><br>	
+						
+						<div class="form-group">
+							<input type="text" class="form-control" name="name" placeholder="Your Name">
+						</div>
+						<br>
+						<br>
+						
+						<div class="form-group">
+							<input type="email" class="form-control" name="email" placeholder="Your Email">
+						</div>
+						<br><br>
+						
+						<div class="form-group">
+							<input type="text" class="form-control" name="phone" placeholder="Your Phone Number">
+						</div>
+						<br><br>
+						
+						<div class="form-group">
+							<input type="text" class="form-control" name="subject" placeholder="Subject">
+						</div>
+						<br><br>
 						<div class="col-md-12">
 							<textarea class="form-control" name="message"></textarea>
 						</div>
@@ -88,14 +86,14 @@
 					Canada, N0H 2L0
 				</p>
 			</div>
-<br>
-<br>
-<br>
-<div class="map-wrapper"></div>
-<input type="textbox" class="form-control address" placeholder="Enter starting point">
-<button class="geocode btn btn-default" id="btnred">Get Route</button>
-<button class="streetView btn btn-default" id="btnred">Show Street View</button>
-<div class="directionsPanel"></div>
+			<br>
+			<br>
+			<br>
+			<div class="map-wrapper"></div>
+			<input type="textbox" class="form-control address" placeholder="Enter starting point">
+			<button class="geocode btn btn-default" id="btnred">Get Route</button>
+			<button class="streetView btn btn-default" id="btnred">Show Street View</button>
+			<div class="directionsPanel"></div>
 		</div>
 	</div>
 </section>
