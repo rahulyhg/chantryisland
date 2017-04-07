@@ -7,7 +7,7 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $subject = $_POST['subject'];
 $msg = $_POST['message'];
-$direct = "thankyou.php";
+$direct = "index.php";
 sendMessage($name, $email, $phone, $subject, $msg, $direct);
 }
 else
@@ -53,7 +53,7 @@ else
 							<input type="text" class="form-control" name="subject" placeholder="Subject">
 						</div>
 						<br><br>
-						<div class="col-md-12">
+						<div class="form-group">
 							<textarea class="form-control" name="message"></textarea>
 						</div>
 					</div>
@@ -89,11 +89,23 @@ else
 			<br>
 			<br>
 			<br>
-			<div class="map-wrapper"></div>
-			<input type="textbox" class="form-control address" placeholder="Enter starting point">
-			<button class="geocode btn btn-default" id="btnred">Get Route</button>
-			<button class="streetView btn btn-default" id="btnred">Show Street View</button>
-			<div class="directionsPanel"></div>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-5 col-md-offset-1 col-xs-12">
+					<div class="map-wrapper"></div>
+				</div>
+				<div class="col-md-5 col-xs-12">
+					<input type="textbox" class="form-control address" placeholder="Enter starting point"><br>
+					<button class="geocode btn btn-default" id="btnred">Get Route</button>
+					<button class="streetView btn btn-default" id="btnred">Show Street View</button>
+					<div class="directionsPanel"></div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
 		</div>
 	</div>
 </section>

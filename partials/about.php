@@ -19,6 +19,7 @@
 	<div class="row" id="pageContent">
 		<div class="col-xs-12 col-sm-offset-0 col-md-6 col-md-offset-1 about-main"><br><br><br>
 			<img src="img/about.jpg" alt="chantry island" class="img-responsive">
+			Picture by James Swartzs
 			<br><br><br><br>
 			<h2><?php echo $row['about_title']; ?></h2>
 			<h3><?php echo $row['about_Subtitle']; ?></h3><br>
