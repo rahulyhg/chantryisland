@@ -101,7 +101,7 @@ app.controller('GalleryCtrl', [function() {
             $.getJSON('includes/getImages.php', { getImage: this.id }, function(data) {
                 //console.log('click');
                 $('.image').attr('src', 'img/' + data.g_img);
-                $('.caption').text(data.g_title);
+                $('.caption').text(data.g_credit);
             });
         });
     });

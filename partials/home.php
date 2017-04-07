@@ -1,7 +1,7 @@
 <section id="home">
 	<h2 class="hidden">Chantry Island Website</h2>
 	<div class="row">
-		<div class="col-xs-12 col-sm-offset-0 col-md-8 col-md-offset-2 home-welcome">
+		<div class="col-xs-10 col-sm-10 col-md-8 col-md-offset-2 home-welcome">
 			<h3>Welcome to <br> Chantry Island</h2>
 		</div>
 	</div>

@@ -36,7 +36,10 @@
 		<?php
 			if(!is_string($getGallery)){
 			while($row = mysqli_fetch_array($getGallery)){
-			echo "<div class=\"col-xs-6 col-md-3\"><img class=\"img-responsive\" id=\"{$row['g_id']}\" src=\"img/{$row['g_img']}\"></div>";
+
+			echo "<div class=\"col-xs-6 col-md-3\">
+			<img class=\"img-responsive\" id=\"{$row['g_id']}\" src=\"img/{$row['g_img']}\">
+			</div>";
 			}
 			} else {
 			//echo "nope...";
