@@ -1,0 +1,7 @@
+sass --watch css/scss/main.scss:css/app.css --style compressed
+
+sass --watch css/scss/nojs.scss:css/no-js.css --style compressed
+
+sass --watch admin/css/scss/main.scss:admin/css/app.css --style compressed
+
+sass --watch admin/css/scss/nojs.scss:admin/css/no-js.css --style compressed
