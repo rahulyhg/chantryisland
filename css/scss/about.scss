@@ -1,20 +1,67 @@
+
 #about {
     h2 {
         @extend .page-h2;
     }
     h3 {
         @extend .page-h3;
+        font-size: 25px;
     }
     .about-main {
         @extend .page-main;
+        p {
+        font-size: 14px;
+        }
     }
+
+
+    .about-sidebar-1 {
+        display: none;
+    }
+
+    .about-sidebar {
+        background-color: $red;
+        h4 {
+            color:$white;
+            text-transform: uppercase;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            font-weight: 100;
+            margin: 30px;
+        }
+          p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            text-align: justify;
+            text-justify: inter-word;
+            font-weight: 100;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+}
+
+
+    @media screen and (min-width: 62.125em) {
+    h3 {
+        font-size: 35px;
+    }
+
+    .about-main {
+        p {
+        font-size: 20px;
+        }
+    }
+
     .about-sidebar-1,
     h4 {
         color: $grey;
-        margin-top: 50px;
+        margin-top: 20px;
         font-size: 1.5em;
+        display: block;
     }
     .about-sidebar {
+        margin-top: 70px;
         background-color: $red;
         h4 {
             color:$white;
@@ -26,7 +73,7 @@
         }
         p {
             font-family: 'Raleway', sans-serif;
-            font-size: 14px;
+            font-size: 16px;
             text-align: justify;
             text-justify: inter-word;
             font-weight: 100;
@@ -35,4 +82,5 @@
             padding-bottom: 40px;
         }
     }
+}
 }
